@@ -151,7 +151,7 @@ export default function Home() {
                 <h1 className=" font-semibold text-[#626161] text-[24px] " >&nbsp;&nbsp;Soufiane Hrittane</h1>
               </div>
 
-              <p className="text-[#868686] text-sm  " >I'm creative Full Stack Developer based in Elhajeb Morocco, and I'm very passionate and dedicated to my work.</p>
+              <p className="text-[#868686] text-sm  " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
 
               <a href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3"  > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
 
@@ -165,7 +165,7 @@ export default function Home() {
 
               <h1 className=" font-semibold text-[#626161] text-base " >Soufiane Hrittane</h1>
               <hr className="w-full h-[1px] mx-auto  bg-gray-400 border-0 rounded  dark:bg-gray-700" />
-              <p className="text-[#868686] text-[10px] font-medium " >I'm creative Full Stack Developer based in Elhajeb Morocco, and I'm very passionate and dedicated to my work.</p>
+              <p className="text-[#868686] text-[10px] font-medium " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
 
               <a href="/contact" className="bg-[#EDEDED] dark:bg-[#151617] text-black dark:text-white text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full "> Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
 
