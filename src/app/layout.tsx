@@ -3,8 +3,9 @@ import { Poppins } from 'next/font/google';
 import "./globals.css";
 import NavbarLg from "@/components/NavbarLg";
 import NavbarSm from "@/components/NavbarSm";
+import { Providers } from '@/components/providers'
 
-import { Providers } from '../components/providers'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 const poppins = Poppins({
@@ -39,7 +40,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           <NavbarSm />
         </Providers>
       </body>
-
+      <GoogleAnalytics gaId="G-C76KR4DQ3J" />
     </html>
 
   );
