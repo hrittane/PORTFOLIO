@@ -24,13 +24,14 @@ export default function Posts() {
                     className="w-full"
                     variant="outline"
                     disabled={!hasNextPage || isFetching}
-                    onClick={() => fetchNextPage()}
-                >
+                    onClick={() => fetchNextPage()}>
+
                     {isFetching
                         ? "Loading..."
                         : hasNextPage
                             ? "Load more"
                             : "That's all for today!"}
+
                 </Button>
             </div>
         </>

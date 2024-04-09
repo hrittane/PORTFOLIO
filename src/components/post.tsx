@@ -17,7 +17,7 @@ export default function Post({ slug }: Props) {
     if (!data) return notFound();
 
     return (
-        <div>
+        <div className=""  >
             <img src={data?.coverImage.url} alt="" className="w-full" />
             <h1 className="text-4xl lg:text-6xl text-center leading-relaxed font-bold mt-5">
                 {data?.title}

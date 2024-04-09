@@ -36,16 +36,15 @@ async function page() {
     });
 
     return (
-        <div className="flex items-center justify-center h-screen p-10">
-            <main className="max-w-7xl w-full px-3 xl:p-0 mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
-                    <HydrationBoundary state={dehydrate(queryClient)}>
-                        <Posts />
-                        <NewsletterCard />
-                    </HydrationBoundary>
-                </div>
-            </main>
-        </div>
+
+        <main className="max-w-6xl w-full px-3 xl:p-0 mx-auto my-20">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5 ">
+                <HydrationBoundary state={dehydrate(queryClient)}>
+                    <Posts />
+                    <NewsletterCard />
+                </HydrationBoundary>
+            </div>
+        </main>
     )
 }
 
