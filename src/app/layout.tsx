@@ -6,7 +6,7 @@ import NavbarSm from "@/components/NavbarSm";
 import { Providers } from '@/components/providers'
 
 import { GoogleAnalytics } from '@next/third-parties/google'
-
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -41,6 +41,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         </Providers>
       </body>
       <GoogleAnalytics gaId="G-FKHM0PG82M" />
+      <Analytics />
     </html>
 
   );
