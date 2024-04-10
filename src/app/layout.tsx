@@ -40,7 +40,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           <NavbarSm />
         </Providers>
       </body>
-      <GoogleAnalytics gaId="G-FKHM0PG82M" />
+      <GoogleAnalytics gaId="G-9XSX5YJDNM" />
       <Analytics />
     </html>
 
