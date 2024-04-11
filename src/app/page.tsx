@@ -257,26 +257,26 @@ export default function Home() {
 
 
               <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center py-2 my-3 ">
-                <i className='bx bx-badge-check' ></i>
+                <i className='bx bx-badge-check text-2xl' ></i>
                 <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Experience</h1>
                 <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >10 Years Working</p>
               </div>
 
               <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center py-2 my-3 ">
-                <i className='bx bx-briefcase-alt-2' ></i>
+                <i className='bx bx-briefcase-alt-2 text-2xl' ></i>
                 <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Completed</h1>
                 <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 + Projects</p>
               </div>
 
 
               <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center  py-2 my-3">
-                <i className='bx bx-support' ></i>
+                <i className='bx bx-support text-2xl' ></i>
                 <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Support</h1>
                 <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >Online 24/7</p>
               </div>
 
               <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center  py-2 my-3">
-                <i className='bx bx-like' ></i>
+                <i className='bx bx-like text-2xl' ></i>
                 <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Satisfaction</h1>
                 <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 % guaranteed </p>
               </div>
