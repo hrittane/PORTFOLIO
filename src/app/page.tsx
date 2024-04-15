@@ -34,7 +34,7 @@ export default function Home() {
 
             <div className="absolute bottom-0 md:top-1/2 md:-trangray-y-1/2 left-0 flex flex-col items-center">
 
-              <FaXTwitter className="my-2 font-xs md:text-2xl " />
+              <a href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-2xl " /></a>
               <FaWhatsapp className="my-2 font-xs md:text-2xl " />
               <FaGithub className="my-2 font-xs md:text-2xl " />
               <FaInstagram className="my-2 font-xs md:text-2xl " />
