@@ -30,7 +30,6 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' />
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
       </head>
 
       <body className={`${poppins.variable} text-[#333333] bg-[#F5F5F7] dark:text-white dark:bg-[#080708]`}>
