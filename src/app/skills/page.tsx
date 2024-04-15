@@ -40,9 +40,9 @@ function Skills() {
                         {/* selection */}
                         <div className="w-full flex flex-row justify-around my-5  md:mt-10   " >
 
-                            <a onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Education ? '' : 'text-[#888888]'}`} ><i className='bx bxs-graduation'></i>&nbsp;Education</p> </a>
+                            <span onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Education ? '' : 'text-[#888888]'}`} ><i className='bx bxs-graduation'></i>&nbsp;Education</p> </span>
                             |
-                            <a onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Experience ? '' : 'text-[#888888]'}`} ><i className='bx bx-briefcase-alt-2' ></i>&nbsp;Experience</p> </a>
+                            <span onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Experience ? '' : 'text-[#888888]'}`} ><i className='bx bx-briefcase-alt-2' ></i>&nbsp;Experience</p> </span>
 
                         </div>
 
