@@ -142,7 +142,7 @@ export default function Home() {
 
 
             {/* on desktop */}
-            <div className="hidden md:flex md:flex-col md:h-full md:justify-between " >
+            <section className="hidden md:flex md:flex-col md:h-full md:justify-between " >
 
               <h1 className="font-semibold  md:text-3xl lg:text-5xl md:leading-loose lg:leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
 
@@ -155,11 +155,11 @@ export default function Home() {
 
               <a href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3"  > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
 
-            </div>
+            </section>
 
 
             {/* on mobile */}
-            <div className=" md:hidden text-left h-full flex flex-col justify-between " >
+            <section className=" md:hidden text-left h-full flex flex-col justify-between " >
 
               <h1 className="font-semibold text-xl leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
 
@@ -170,7 +170,7 @@ export default function Home() {
               <a href="/contact" className="bg-[#EDEDED] dark:bg-[#151617] text-black dark:text-white text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full "> Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
 
 
-            </div>
+            </section>
 
 
           </div>
@@ -245,12 +245,12 @@ export default function Home() {
           <div className="hidden  md:flex flex-col w-full h-full p-3 md:p-5 " >
 
 
-            <div className="hidden md:block " >
+            <section className="hidden md:block " >
 
               <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >About Me</h1>
               <p className="text-[10px] sm:text-sm md:text-sm lg:text-sm text-[#868686] mt-2  " > im a Full Stack Developer, I create web pages and mobile applications with great UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
 
-            </div>
+            </section>
 
 
             <div className="hidden mt-2 md:flex flex-row flex-wrap gap-4 h-full " >
