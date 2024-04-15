@@ -26,7 +26,7 @@ function Portfolio() {
                     <div className='h-[45%] flex flex-row gap-4' >
 
 
-                        <a href='https://ecommerce-sanity-stripe-taupe.vercel.app/' target='blank' className="relative w-[60%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url("apps/delinWeb.jpg")` }} >
+                        <a href='https://ecommerce-sanity-stripe-taupe.vercel.app/' target='blank' className="relative w-[60%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url("apps/delinWeb.webp")` }} >
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                                 <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-2xl" >Delin e-commerce<br></br>Brand</h1>
