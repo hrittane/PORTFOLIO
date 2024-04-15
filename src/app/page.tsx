@@ -19,7 +19,7 @@ export default function Home() {
       <div className="flex h-[75%] flex-col gap-4 justify-center w-[45%] md:w-[30%]" >
 
         {/* card 1 mobile and desktop */}
-        <div className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-center bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.png")` }}>
+        <div className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-center bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.webp")` }}>
 
           <div className="relative w-full h-full "   >
 
