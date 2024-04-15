@@ -36,7 +36,7 @@ function Portfolio() {
                         </a>
 
 
-                        <a href='https://carcasse.netlify.app/' target='blank' className="relative w-[40%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url("apps/carcas.png")` }}>
+                        <a href='https://carcasse.netlify.app/' target='blank' className="relative w-[40%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url("apps/carcas.webp")` }}>
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                                 <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm md:text-xl lg:text-2xl" >car<br></br>casse</h1>
@@ -53,7 +53,7 @@ function Portfolio() {
                     {/* row 2  */}
                     <div className='h-[55%] flex flex-row gap-4 ' >
 
-                        <a href='https://www.figma.com/file/3zIYCkYH9KNisONiHHM01i/ADII-TEMPLATE?type=design&mode=design&t=7j9dDGXINwxzoepd-1' target='blank' className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url("apps/ADI.png")` }}>
+                        <a href='https://www.figma.com/file/3zIYCkYH9KNisONiHHM01i/ADII-TEMPLATE?type=design&mode=design&t=7j9dDGXINwxzoepd-1' target='blank' className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url("apps/ADI.webp")` }}>
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                                 <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm md:text-xl lg:text-2xl" >Douane Maroc<br></br>Figma</h1>
@@ -63,7 +63,7 @@ function Portfolio() {
                         </a>
 
 
-                        <a href='https://call-meeting.netlify.app/' target="blank" className="relative w-[60%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url("apps/connectMe.png")` }} >
+                        <a href='https://call-meeting.netlify.app/' target="blank" className="relative w-[60%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url("apps/connectMe.webp")` }} >
 
                             <div className=" absolute bottom-0 m-3 sm:m-5 md:m-6 ">
                                 <h1 className=" font-semibold text-[#EFEFEF] text-sm md:text-xl lg:text-2xl" >connectMe<br></br>App</h1>
@@ -81,7 +81,7 @@ function Portfolio() {
                 <div className="flex w-full h-[70%] flex-col md:justify-center md:w-[40%] gap-4 "  >
 
 
-                    <div className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" onClick={() => { setOpenModalDelin(!openModalDelin) }} style={{ backgroundImage: `url("apps/delinMobile.png")` }}  >
+                    <div className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" onClick={() => { setOpenModalDelin(!openModalDelin) }} style={{ backgroundImage: `url("apps/delinMobile.webp")` }}  >
 
                         <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                             <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-2xl" >Delin Brand<br></br>mobile app</h1>
@@ -91,7 +91,7 @@ function Portfolio() {
                     </div>
 
 
-                    <div className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" onClick={() => { setOpenModalMeditate(!openModalMeditate) }} style={{ backgroundImage: `url("apps/Meditation.png")` }}  >
+                    <div className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" onClick={() => { setOpenModalMeditate(!openModalMeditate) }} style={{ backgroundImage: `url("apps/Meditation.webp")` }}  >
 
                         <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                             <h1 className=" font-semibold  text-[#EFEFEF] text-sm md:text-xl lg:text-2xl" >Mediatate<br></br>Me</h1>
@@ -101,7 +101,7 @@ function Portfolio() {
                     </div>
 
 
-                    <a href='https://3d-sneaker-plugin.netlify.app/' target="blank" className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" style={{ backgroundImage: `url("apps/shoes.png")` }}  >
+                    <a href='https://3d-sneaker-plugin.netlify.app/' target="blank" className="relative flex-1 bg-white rounded-[15px] dark:bg-[#1C1D1F]  bg-cover bg-center bg-no-repeat cursor-pointer" style={{ backgroundImage: `url("apps/shoes.webp")` }}  >
 
                         <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                             <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-2xl" >3d configurator<br></br>plugin</h1>
