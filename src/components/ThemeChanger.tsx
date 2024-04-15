@@ -12,9 +12,9 @@ function ThemeChanger() {
     <>
       {
         theme === "light" ?
-          <button onClick={() => setTheme('dark')} className=' h-full flex items-center '  > <i className='bx bxs-moon' ></i> </button>
+          <button onClick={() => setTheme('dark')} className=' h-full flex items-center' type="button" aria-label="search"  > <i className='bx bxs-moon' ></i> </button>
           :
-          <button onClick={() => setTheme('light')} className=' h-full flex items-center '  > <i className='bx bxs-sun' ></i> </button>
+          <button onClick={() => setTheme('light')} className=' h-full flex items-center' type="button" aria-label="search"  > <i className='bx bxs-sun' ></i> </button>
       }
     </>
   )
