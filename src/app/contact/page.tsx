@@ -71,9 +71,9 @@ function Contact() {
 
                     <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank">
                         <i className='bx bxl-linkedin text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
-                        <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Instagram</h1>
+                        <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">linkedin</h1>
                         <div className='hidden md:block' >
-                            <p className="text-[#808080] text-sm mt-2" >user.fb123</p>
+                            <p className="text-[#808080] text-sm mt-2" >soufiane-hrittane</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
                     </a>
