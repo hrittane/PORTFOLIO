@@ -35,7 +35,7 @@ export default function Home() {
             <div className="absolute bottom-0 md:top-1/2 md:-trangray-y-1/2 left-0 flex flex-col items-center">
 
               <a href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-2xl " /></a>
-              <a href="https://wa.me/+212608223488/?text=urlencodedtext" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-2xl " /> </a>
+              <a href="https://wa.me/+212608223488/?text=hello !" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-2xl " /> </a>
               <a href="https://github.com/hrittane" target="blank" > <FaGithub className="my-2 font-xs md:text-2xl " /></a>
               <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank" ><FaLinkedinIn className="my-2 font-xs md:text-2xl " /></a>
 

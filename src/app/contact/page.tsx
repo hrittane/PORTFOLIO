@@ -43,40 +43,40 @@ function Contact() {
 
                 <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
-                    <div>
+                    <a href='mailto:info@moroccan.dev' >
                         <i className='bx bx-mail-send text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
                         <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Email</h1>
                         <div className='hidden md:block' >
-                            <p className="text-[#808080] text-sm mt-2" >hrittane.soufiane@gmail.com</p>
+                            <p className="text-[#808080] text-sm mt-2" >info@moroccan.dev</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 
                 <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
-                    <div>
+                    <a href="https://wa.me/+212608223488/?text=hello!">
                         <i className='bx bxl-whatsapp text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
                         <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Whatsapp</h1>
                         <div className='hidden md:block' >
                             <p className="text-[#808080] text-sm mt-2" >+212608223488</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 
                 <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
-                    <div>
-                        <i className='bx bxl-instagram text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
+                    <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank">
+                        <i className='bx bxl-linkedin text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
                         <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Instagram</h1>
                         <div className='hidden md:block' >
                             <p className="text-[#808080] text-sm mt-2" >user.fb123</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
-                    </div>
+                    </a>
 
                 </div>
 
