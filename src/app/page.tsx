@@ -1,7 +1,9 @@
+"use client"
+
 import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
-
+import { motion } from "framer-motion";
 
 
 export default function Home() {
@@ -19,7 +21,17 @@ export default function Home() {
       <div className="flex h-[75%] flex-col gap-4 justify-center w-[45%] md:w-[30%]" >
 
         {/* card 1 mobile and desktop */}
-        <div className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-center bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.webp")` }}>
+        <motion.div
+
+          initial={{
+            opacity: 0,
+            translateX: -50,
+            translateY: -50,
+          }}
+          animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+
+          className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-center bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.webp")` }}>
 
           <div className="relative w-full h-full "   >
 
@@ -44,10 +56,20 @@ export default function Home() {
 
           </div>
 
-        </div>
+        </motion.div>
 
         {/* card2 */}
-        <div className="h-[60%] md:h-[25%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F]  md:p-5 border border-[#EDEDED] dark:border-0 ">
+        <motion.div
+
+          initial={{
+            opacity: 0,
+            translateX: 0,
+            translateY: 50,
+          }}
+          animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+
+          className="h-[60%] md:h-[25%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F]  md:p-5 border border-[#EDEDED] dark:border-0 ">
 
           {/* on desktop */}
           <div className="hidden md:block h-full" >
@@ -126,8 +148,7 @@ export default function Home() {
           </div>
 
 
-
-        </div>
+        </motion.div>
 
       </div>
 
@@ -138,7 +159,18 @@ export default function Home() {
         <div className="h-[80%] md:h-[60%] w-full rounded-[15px] flex flex-col md:flex-row gap-4">
 
           {/* card 3 */}
-          <div className="h-[60%] w-[100%] md:h-full md:w-[60%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:p-5 border border-[#EDEDED] dark:border-0">
+          <motion.div
+
+            initial={{
+              opacity: 0,
+              translateX: 0,
+              translateY: -50,
+            }}
+            animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+
+
+            className="h-[60%] w-[100%] md:h-full md:w-[60%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:p-5 border border-[#EDEDED] dark:border-0">
 
 
             {/* on desktop */}
@@ -173,10 +205,21 @@ export default function Home() {
             </section>
 
 
-          </div>
+          </motion.div>
 
           {/* card 4 */}
-          <div className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:px-10 md:py-5 border border-[#EDEDED] dark:border-0" >
+          <motion.div
+
+            initial={{
+              opacity: 0,
+              translateX: 50,
+              translateY: -50,
+            }}
+            animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+
+
+            className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:px-10 md:py-5 border border-[#EDEDED] dark:border-0" >
 
             {/* on desktop */}
             <div className="hidden md:flex md:flex-col md:h-full md:justify-between items-center" >
@@ -232,13 +275,24 @@ export default function Home() {
 
             </div>
 
-
-          </div>
+          </motion.div>
 
         </div>
 
         {/* lower row */}
-        <div className="h-[20%] p-3 md:p-0 md:h-[40%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0">
+        <motion.div
+
+          initial={{
+            opacity: 0,
+            translateX: 0,
+            translateY: 50,
+          }}
+          animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+
+
+
+          className="h-[20%] p-3 md:p-0 md:h-[40%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0">
 
 
           {/* on desktop */}
@@ -300,7 +354,7 @@ export default function Home() {
             <a href="/cv.pdf" target="_blank" download className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Download Cv &nbsp; <i className='bx bxs-download' ></i> </a>
           </div>
 
-        </div>
+        </motion.div>
 
       </div>
 
