@@ -102,6 +102,10 @@ export async function getPostBySlug(slug: string) {
         post(slug: $slug) {
           title
           subtitle
+          seo{
+            title
+            description
+          }
           coverImage {
             url
           }

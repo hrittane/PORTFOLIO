@@ -14,6 +14,7 @@ export async function generateMetadata({
     const data = await getPostBySlug(params.slug);
     return {
         title: data.title,
+        description: data.seo.description
     };
 }
 

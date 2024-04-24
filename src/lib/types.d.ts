@@ -12,6 +12,7 @@ export type PostMetadata = {
     title: string;
     subtitle?: string;
     slug: string;
+    // description: string;
     content: {
         text: string;
     };
@@ -57,6 +58,10 @@ export type GetPostBySlugResponse = {
         post: {
             title: string;
             subtitle?: string;
+            seo: {
+                title: string;
+                description: string;
+            };
             coverImage: {
                 url: string;
             };

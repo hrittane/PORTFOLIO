@@ -24,14 +24,17 @@ export default function Post({ slug }: Props) {
             </h1>
             <p className="my-5 text-center text-xl text-gray-400">{data?.subtitle}</p>
             <div className="my-5 flex items-center justify-center text-lg">
-                {data?.author.profilePicture && (
-                    <img
-                        src={data?.author.profilePicture}
-                        alt={data?.author.name}
-                        className="rounded-full h-10 w-10 mr-5"
-                    />
-                )}
-                {data?.author.name}
+                by:&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.moroccan.dev/" className=" flex flex-row items-center " >
+                    {data?.author.profilePicture && (
+                        <img
+                            src={data?.author.profilePicture}
+                            alt={data?.author.name}
+                            className="rounded-full h-10 w-10 mr-5"
+                        />
+                    )}
+                    {data?.author.name}
+                </a>
             </div>
             <div
                 className="blog-content text-xl leading-loose flex flex-col gap-5 mt-5"
