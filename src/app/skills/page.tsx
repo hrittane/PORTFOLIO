@@ -1,8 +1,7 @@
-
-
 'use client'
 
 import { useState } from 'react'
+import { motion } from "framer-motion";
 
 
 function Skills() {
@@ -25,7 +24,17 @@ function Skills() {
             <div className="flex h-[75%] flex-col gap-4 justify-center w-[50%]" >
 
                 {/* card 1 */}
-                <div className="h-[100%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: -50,
+                        translateY: 0,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="h-[100%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
                     <div className="flex flex-col w-full h-full  items-center">
 
@@ -355,7 +364,7 @@ function Skills() {
                     </div>
 
 
-                </div>
+                </motion.div>
 
 
             </div>
@@ -364,7 +373,17 @@ function Skills() {
             <div className="flex h-[75%] flex-col gap-4 justify-center w-[50%]" >
 
                 {/* third card */}
-                <div className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 50,
+                        translateY: -50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
                     {/* content */}
                     <div className="flex flex-col w-full h-full  ">
@@ -459,10 +478,20 @@ function Skills() {
 
                     </div>
 
-                </div>
+                </motion.div>
 
                 {/* fourth card */}
-                <div className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 50,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
                     {/* content */}
                     <div className="flex flex-col w-full h-full  ">
@@ -557,7 +586,7 @@ function Skills() {
 
                     </div>
 
-                </div>
+                </motion.div>
             </div>
 
 

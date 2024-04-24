@@ -37,7 +37,7 @@ async function page() {
 
     return (
 
-        <main className="max-w-6xl w-full px-3 xl:p-0 mx-auto my-20">
+        <main className="max-w-6xl w-full px-3 xl:p-0 mx-auto my-20  ">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5 ">
                 <HydrationBoundary state={dehydrate(queryClient)}>
                     <Posts />

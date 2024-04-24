@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRouter } from 'next/navigation'
+import { motion } from "framer-motion";
 
 
 function Contact() {
@@ -41,7 +42,18 @@ function Contact() {
             {/* col1 */}
             <div className="flex h-[15%] w-full md:h-[75%] md:flex-col md:justify-center md:w-[40%] gap-4 " >
 
-                <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+
+                    className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
                     <a href='mailto:info@moroccan.dev' >
                         <i className='bx bx-mail-send text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
@@ -52,9 +64,20 @@ function Contact() {
                         </div>
                     </a>
 
-                </div>
+                </motion.div>
 
-                <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.4 }}
+
+
+                    className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
                     <a href="https://wa.me/+212608223488/?text=hello!">
                         <i className='bx bxl-whatsapp text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
@@ -65,9 +88,20 @@ function Contact() {
                         </div>
                     </a>
 
-                </div>
+                </motion.div>
 
-                <div className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.6 }}
+
+
+                    className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
 
                     <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank">
                         <i className='bx bxl-linkedin text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
@@ -78,16 +112,27 @@ function Contact() {
                         </div>
                     </a>
 
-                </div>
+                </motion.div>
 
 
             </div>
 
             {/* col2 */}
-            <div className="flex h-[60%] w-full md:h-[75%] md:flex-col md:justify-center gap-4 md:w-[60%]" >
+            <div className="flex h-[60%] w-full md:h-[75%] md:flex-col md:justify-center gap-4 md:w-[60%] " >
 
 
-                <div className="h-full w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-5 md:p-10 flex flex-col justify-between items-center border border-[#EDEDED] dark:border-0 " >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: -50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.6 }}
+
+
+                    className="h-full w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-5 md:p-10 flex flex-col justify-between items-center border border-[#EDEDED] dark:border-0 " >
 
 
                     <div className="text-left md:text-center w-full mb-5" >
@@ -129,7 +174,7 @@ function Contact() {
 
 
 
-                </div>
+                </motion.div>
 
 
             </div>

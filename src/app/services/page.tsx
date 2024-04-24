@@ -1,6 +1,6 @@
 'use client';
 
-
+import { motion } from "framer-motion";
 import { useState } from 'react';
 
 
@@ -69,7 +69,17 @@ function Services() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 ">
 
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(ProductDesigner), setTitle("Product Designer") }} >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: -50,
+                        translateY: -50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(ProductDesigner), setTitle("Product Designer") }} >
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -79,9 +89,19 @@ function Services() {
 
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }} >
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: -50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }} >
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -90,9 +110,19 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }}  >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(FrontEndDeveloper), setTitle("Front-End Developer") }}>
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 50,
+                        translateY: -50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(FrontEndDeveloper), setTitle("Front-End Developer") }}>
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -101,9 +131,19 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(FrontEndDeveloper), setTitle("Front-End Developer") }} >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(backEndDeveloper), setTitle("Back-End Developer") }}>
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: -50,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(backEndDeveloper), setTitle("Back-End Developer") }}>
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -112,9 +152,19 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(backEndDeveloper), setTitle("Back-End Developer") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(MobileDeveloper), setTitle("Mobile Developer") }}>
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 0,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(MobileDeveloper), setTitle("Mobile Developer") }}>
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -123,9 +173,19 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(MobileDeveloper), setTitle("Mobile Developer") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </div>
+                </motion.div>
 
-                <div className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(DevopsArchitect), setTitle("Devops Architect") }}>
+                <motion.div
+
+                    initial={{
+                        opacity: 0,
+                        translateX: 50,
+                        translateY: 50,
+                    }}
+                    animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                    transition={{ duration: 0.3, delay: 0.2 }}
+
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(DevopsArchitect), setTitle("Devops Architect") }}>
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -134,7 +194,7 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(DevopsArchitect), setTitle("Devops Architect") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </div>
+                </motion.div>
 
 
             </div>
