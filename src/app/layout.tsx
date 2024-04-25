@@ -16,8 +16,14 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Soufiane Hrittane Portfolio',
-  description: 'this is hrittane soufiane portfolio',
+  title: {
+    default: 'Soufiane\'s portfolio ',
+    template: "%s - Soufiane Hrittane Portfolio"
+  },
+  description: 'my name is soufiane im a full stack developper and this is my portfolio',
+  twitter: {
+    card: "summary_large_image"
+  }
 }
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
