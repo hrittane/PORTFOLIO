@@ -5,6 +5,7 @@ import {
     QueryClient,
     dehydrate,
 } from "@tanstack/react-query";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({
     params,
@@ -12,10 +13,17 @@ export async function generateMetadata({
     params: { slug: string };
 }) {
     const data = await getPostBySlug(params.slug);
-    return {
-        title: data.title,
-        description: data.seo.description
-    };
+
+    if (data != null) {
+        return {
+            title: data.title,
+            description: data.seo.description
+        };
+    } else {
+        notFound()
+    }
+
+
 }
 
 export default async function BlogPostPage({
