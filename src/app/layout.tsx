@@ -18,11 +18,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     default: 'Soufiane\'s portfolio ',
-    template: "%s - Soufiane Hrittane Portfolio"
+    // template: "%s - Soufiane Hrittane Portfolio"
   },
   description: 'my name is soufiane im a full stack developper and this is my portfolio',
   twitter: {
     card: "summary_large_image"
+  },
+  openGraph: {
+    images: [{
+      url: './opengraph-image.png',
+      alt: "soufiane's portfolio",
+    }]
   }
 }
 
