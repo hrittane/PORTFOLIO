@@ -16,10 +16,17 @@ export async function generateMetadata({
 
     if (data != null) {
         return {
-            title: data.title,
-            description: data.seo.description,
+            // title: data.title,
+            // description: data.seo.description,
             openGraph: {
-                images: [data.coverImage.url]
+                title: data.title,
+                description: data.seo.description,
+                url: params.slug,
+                siteName: 'Soufiane hritane\'s blog ',
+                images: [{
+                    url: data.coverImage.url,
+                    alt: data.title,
+                }]
             }
 
         };
