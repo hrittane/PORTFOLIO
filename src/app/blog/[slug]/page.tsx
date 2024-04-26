@@ -16,6 +16,7 @@ export async function generateMetadata({
 
     if (data != null) {
         return {
+
             title: data.title,
             description: data.seo.description,
             openGraph: {

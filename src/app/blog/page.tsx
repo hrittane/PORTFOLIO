@@ -14,7 +14,9 @@ export async function generateMetadata() {
     const data = await getBlogName();
 
     return {
+
         title: data.displayTitle || data.title,
+        description: 'my name is soufiane im a full stack developper from morocco and this is my Blog',
     };
 }
 
