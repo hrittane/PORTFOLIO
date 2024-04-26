@@ -21,12 +21,13 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image"
   },
-  openGraph: {
-    images: [{
-      url: 'opengraph-image.png',
-      alt: "soufiane's portfolio",
-    }]
-  }
+  metadataBase: new URL("https://www.moroccan.dev/"),
+  // openGraph: {
+  //   images: [{
+  //     url: 'opengraph-image.png',
+  //     alt: "soufiane's portfolio",
+  //   }]
+  // }
 }
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
