@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Dialog, DialogContent, DialogHeader } from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
 import { useMutation } from "@tanstack/react-query";
 import { subscribeToNewsletter } from "@/lib/requests";
 import { Button } from "./ui/button";
@@ -50,7 +50,8 @@ export default function NewsletterCard() {
         <Dialog open={open} onOpenChange={() => setOpen(!open)}>
             <DialogContent>
                 <DialogHeader>
-                    <h1 className="text-2xl font-bold">Join the newsletter!</h1>
+                    <DialogTitle className="text-2xl font-bold"> Join the newsletter!</DialogTitle>
+
                 </DialogHeader>
                 <p>
                     Enter your email to join the newsletter and stay up to date with the
