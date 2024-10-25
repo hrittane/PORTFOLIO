@@ -4,6 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -247,7 +248,7 @@ export default function Home() {
 
               )}
               {/* button */}
-              <a href="/blog" className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3  rounded-xl flex justify-center items-center w-[174px]" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </a>
+              <Link href="/blog" className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3  rounded-xl flex justify-center items-center w-[174px]" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </Link>
 
             </div>
 
