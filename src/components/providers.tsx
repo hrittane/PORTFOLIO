@@ -9,7 +9,9 @@ type Props = {
 };
 
 
-export function Providers({ children }: Props) {
+export function Providers({ children }: {
+    children: React.ReactNode;
+}) {
     const [queryClient] = useState(() => new QueryClient());
 
     return (

@@ -290,8 +290,6 @@ export default function Home() {
           animate={{ opacity: 1, translateX: 0, translateY: 0 }}
           transition={{ duration: 0.3, delay: 0.2 }}
 
-
-
           className="h-[20%] p-3 md:p-0 md:h-[40%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0">
 
 
