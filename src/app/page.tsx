@@ -47,10 +47,10 @@ export default function Home() {
 
             <div className="absolute bottom-0 md:top-1/2 md:-trangray-y-1/2 left-0 flex flex-col items-center">
 
-              <a href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-2xl " /></a>
-              <a href="https://wa.me/+212608223488/?text=hello !" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-2xl " /> </a>
-              <a href="https://github.com/hrittane" target="blank" > <FaGithub className="my-2 font-xs md:text-2xl " /></a>
-              <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank" ><FaLinkedinIn className="my-2 font-xs md:text-2xl " /></a>
+              <Link href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-2xl " /></Link>
+              <Link href="https://wa.me/+212608223488/?text=hello !" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-2xl " /> </Link>
+              <Link href="https://github.com/hrittane" target="blank" > <FaGithub className="my-2 font-xs md:text-2xl " /></Link>
+              <Link href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank" ><FaLinkedinIn className="my-2 font-xs md:text-2xl " /></Link>
 
             </div>
 
@@ -80,7 +80,7 @@ export default function Home() {
               <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h1>
               <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686] " > here you can </p>
 
-              <a href="/cv.pdf" target="_blank" download className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3 px-4 rounded-xl flex justify-center items-center w-[174px] mt-2 mx-auto "> Download Cv &nbsp; <i className='bx bxs-download' ></i> </a>
+              <Link href="/cv.pdf" target="_blank" download className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3 px-4 rounded-xl flex justify-center items-center w-[174px] mt-2 mx-auto "> Download Cv &nbsp; <i className='bx bxs-download' ></i> </Link>
 
             </div>
 
@@ -186,7 +186,7 @@ export default function Home() {
 
               <p className="text-[#868686] text-sm  " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
 
-              <a href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3"  > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
+              <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3"  > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </Link>
 
             </section>
 
@@ -200,7 +200,7 @@ export default function Home() {
               <hr className="w-full h-[1px] mx-auto  bg-gray-400 border-0 rounded  dark:bg-gray-700" />
               <p className="text-[#868686] text-[10px] font-medium " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
 
-              <a href="/contact" className="bg-[#EDEDED] dark:bg-[#151617] text-black dark:text-white text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full "> Say Hello &nbsp; <i className='bx bxs-send' ></i>  </a>
+              <Link href="/contact" className="bg-[#EDEDED] dark:bg-[#151617] text-black dark:text-white text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full "> Say Hello &nbsp; <i className='bx bxs-send' ></i>  </Link>
 
 
             </section>
@@ -272,7 +272,7 @@ export default function Home() {
 
               </div>
 
-              <a href="/blog" className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </a>
+              <Link href="/blog" className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </Link>
 
             </div>
 
@@ -350,7 +350,7 @@ export default function Home() {
               <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686]" >here you can </p>
             </div>
 
-            <a href="/cv.pdf" target="_blank" download className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Download Cv &nbsp; <i className='bx bxs-download' ></i> </a>
+            <Link href="/cv.pdf" target="_blank" download className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Download Cv &nbsp; <i className='bx bxs-download' ></i> </Link>
           </div>
 
         </motion.div>
