@@ -1,8 +1,13 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 import { useState } from 'react';
 
+
+interface MotionDivProps extends HTMLMotionProps<'div'> {
+    className?: string;
+    onClick?: () => void;
+}
 
 function Services() {
 
@@ -60,6 +65,7 @@ function Services() {
     ];
 
 
+    const MotionDiv: React.FC<MotionDivProps> = (props) => <motion.div {...props} />;
 
     return (
         <div className="h-screen max-w-6xl mx-4 lg:mx-auto flex flex-col justify-center py-3 sm:p-10 md:p-20 lg:p-20 ">
@@ -69,7 +75,7 @@ function Services() {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 ">
 
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -89,9 +95,9 @@ function Services() {
 
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -101,7 +107,8 @@ function Services() {
                     animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
 
-                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }} >
+                    className="relative flex-1 aspect-square bg-white rounded-[15px] dark:bg-[#1C1D1F] border border-[#EDEDED] dark:border-0 cursor-pointer"
+                    onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }} >
 
                     <div className=" absolute bottom-0 m-3 sm:m-5 md:m-7 ">
 
@@ -110,9 +117,9 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(UiUxDesigner), setTitle("Ui/Ux Designer") }}  >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -131,9 +138,9 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(FrontEndDeveloper), setTitle("Front-End Developer") }} >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -152,9 +159,9 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(backEndDeveloper), setTitle("Back-End Developer") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -173,9 +180,9 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(MobileDeveloper), setTitle("Mobile Developer") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -194,7 +201,7 @@ function Services() {
                         <p className="text-[#808080] text-sm mt-2 cursor-pointer" onClick={() => { setOpenModal(!openModal), setData(DevopsArchitect), setTitle("Devops Architect") }}>View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
 
             </div>
@@ -216,7 +223,7 @@ function Services() {
                                 </h3>
                                 <button onClick={() => { setOpenModal(false) }} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                     <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        <path stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                     </svg>
                                     <span className="sr-only">Close modal</span>
                                 </button>

@@ -1,8 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
+interface MotionDivProps extends HTMLMotionProps<'div'> {
+    className?: string;
+}
 
 function Skills() {
 
@@ -15,6 +18,7 @@ function Skills() {
         setExperience(!Experience)
     }
 
+    const MotionDiv: React.FC<MotionDivProps> = (props) => <motion.div {...props} />;
 
     return (
         <div className="h-screen max-w-3xl gap-4 mx-4 md:mx-auto lg:mx-auto flex flex-row items-center">
@@ -24,7 +28,7 @@ function Skills() {
             <div className="flex h-[75%] flex-col gap-4 justify-center w-[50%]" >
 
                 {/* card 1 */}
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -364,7 +368,7 @@ function Skills() {
                     </div>
 
 
-                </motion.div>
+                </MotionDiv>
 
 
             </div>
@@ -373,7 +377,7 @@ function Skills() {
             <div className="flex h-[75%] flex-col gap-4 justify-center w-[50%]" >
 
                 {/* third card */}
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -478,10 +482,10 @@ function Skills() {
 
                     </div>
 
-                </motion.div>
+                </MotionDiv>
 
                 {/* fourth card */}
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -586,7 +590,7 @@ function Skills() {
 
                     </div>
 
-                </motion.div>
+                </MotionDiv>
             </div>
 
 

@@ -2,8 +2,15 @@
 
 
 import { useState } from 'react';
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 
+
+interface MotionAnchorProps extends MotionProps {
+    href?: string;
+    target?: string;
+    className?: string;
+    onClick?: () => void;
+}
 
 function Portfolio() {
 
@@ -11,6 +18,8 @@ function Portfolio() {
     const [openModalDelin, setOpenModalDelin] = useState(false);
     const [openModalMeditate, setOpenModalMeditate] = useState(false);
 
+    const MotionAnchor: React.FC<MotionAnchorProps> = (props) => <motion.a {...props} />;
+    const MotionDiv: React.FC<MotionAnchorProps> = (props) => <motion.div {...props} />;
 
     return (
         <>
@@ -26,7 +35,7 @@ function Portfolio() {
                     <div className='h-[45%] flex flex-row gap-4' >
 
 
-                        <motion.a
+                        <MotionAnchor
 
 
                             initial={{
@@ -36,8 +45,6 @@ function Portfolio() {
                             }}
                             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                             transition={{ duration: 0.3, delay: 0.2 }}
-
-
 
                             href='https://ecommerce-sanity-stripe-taupe.vercel.app/' target='blank' className="relative w-[60%] bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url("apps/delinWeb.webp")` }} >
 
@@ -49,9 +56,9 @@ function Portfolio() {
 
 
 
-                        </motion.a>
+                        </MotionAnchor>
 
-                        <motion.a
+                        <MotionAnchor
 
                             initial={{
                                 opacity: 0,
@@ -69,7 +76,7 @@ function Portfolio() {
                                 <span className="text-[#808080] text-[10px] md:text-sm " >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                             </div>
 
-                        </motion.a>
+                        </MotionAnchor>
 
 
 
@@ -79,7 +86,7 @@ function Portfolio() {
                     {/* row 2  */}
                     <div className='h-[55%] flex flex-row gap-4 ' >
 
-                        <motion.a
+                        <MotionAnchor
 
                             initial={{
                                 opacity: 0,
@@ -97,7 +104,7 @@ function Portfolio() {
                                 <span className="text-[#808080] text-[10px] md:text-sm " >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                             </div>
 
-                        </motion.a>
+                        </MotionAnchor>
 
 
 
@@ -105,7 +112,7 @@ function Portfolio() {
 
 
 
-                        <motion.a
+                        <MotionAnchor
 
                             initial={{
                                 opacity: 0,
@@ -124,7 +131,7 @@ function Portfolio() {
                                 <span className="text-[#808080] text-[10px] md:text-sm " >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                             </div>
 
-                        </motion.a>
+                        </MotionAnchor>
 
                     </div>
 
@@ -135,7 +142,7 @@ function Portfolio() {
                 <div className="flex w-full h-[70%] flex-col md:justify-center md:w-[40%] gap-4 "  >
 
 
-                    <motion.div
+                    <MotionDiv
 
                         initial={{
                             opacity: 0,
@@ -152,10 +159,10 @@ function Portfolio() {
                             <p className="text-[#808080] text-[10px] md:text-sm cursor-pointer " onClick={() => { setOpenModalDelin(!openModalDelin) }} >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
 
-                    </motion.div>
+                    </MotionDiv>
 
 
-                    <motion.div
+                    <MotionDiv
 
                         initial={{
                             opacity: 0,
@@ -172,10 +179,10 @@ function Portfolio() {
                             <p className="text-[#808080] text-[10px] md:text-sm cursor-pointer " onClick={() => { setOpenModalMeditate(!openModalMeditate) }} >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
                         </div>
 
-                    </motion.div>
+                    </MotionDiv>
 
 
-                    <motion.a
+                    <MotionAnchor
 
 
                         initial={{
@@ -194,7 +201,7 @@ function Portfolio() {
                             <span className="text-[#808080] text-[10px] md:text-sm " >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                         </div>
 
-                    </motion.a>
+                    </MotionAnchor>
 
 
                 </div>
@@ -219,7 +226,7 @@ function Portfolio() {
                                 </h3>
                                 <button onClick={() => { setOpenModalDelin(false) }} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                     <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        <path stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                     </svg>
                                     <span className="sr-only">Close modal</span>
                                 </button>
@@ -263,7 +270,7 @@ function Portfolio() {
                                 </h3>
                                 <button onClick={() => { setOpenModalMeditate(false) }} type="button" className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                     <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                        <path stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
                                     </svg>
                                     <span className="sr-only">Close modal</span>
                                 </button>

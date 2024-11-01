@@ -3,8 +3,12 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useRouter } from 'next/navigation'
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 
+
+interface MotionDivProps extends HTMLMotionProps<'div'> {
+    className?: string;
+}
 
 function Contact() {
 
@@ -33,6 +37,8 @@ function Contact() {
     };
 
 
+    const MotionDiv: React.FC<MotionDivProps> = (props) => <motion.div {...props} />;
+
     return (
         <div className="h-screen max-w-3xl gap-4 mx-4 md:mx-auto lg:mx-auto flex flex-col  items-center justify-center  md:flex-row md:justify-center  ">
 
@@ -42,7 +48,7 @@ function Contact() {
             {/* col1 */}
             <div className="flex h-[15%] w-full md:h-[75%] md:flex-col md:justify-center md:w-[40%] gap-4 " >
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -51,9 +57,9 @@ function Contact() {
                     }}
                     animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
+                    className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0"
 
-
-                    className="flex-1 rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 text-center flex flex-col justify-center border border-[#EDEDED] dark:border-0" >
+                >
 
                     <a href='mailto:info@moroccan.dev' >
                         <i className='bx bx-mail-send text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
@@ -64,9 +70,9 @@ function Contact() {
                         </div>
                     </a>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -88,9 +94,9 @@ function Contact() {
                         </div>
                     </a>
 
-                </motion.div>
+                </MotionDiv>
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -112,7 +118,7 @@ function Contact() {
                         </div>
                     </a>
 
-                </motion.div>
+                </MotionDiv>
 
 
             </div>
@@ -121,7 +127,7 @@ function Contact() {
             <div className="flex h-[60%] w-full md:h-[75%] md:flex-col md:justify-center gap-4 md:w-[60%] " >
 
 
-                <motion.div
+                <MotionDiv
 
                     initial={{
                         opacity: 0,
@@ -174,7 +180,7 @@ function Contact() {
 
 
 
-                </motion.div>
+                </MotionDiv>
 
 
             </div>

@@ -10,13 +10,12 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({
     params,
 }: {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }) {
-    const data = await getPostBySlug(params.slug);
-
+    const { slug } = await params;
+    const data = await getPostBySlug(slug);
     if (data != null) {
         return {
-
             title: data.title,
             description: data.seo.description,
             openGraph: {
@@ -25,31 +24,27 @@ export async function generateMetadata({
                     alt: data.title,
                 }]
             }
-
         };
     } else {
         notFound()
     }
-
-
 }
 
 export default async function BlogPostPage({
     params,
 }: {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }) {
+    const { slug } = await params;
     const queryClient = new QueryClient();
-
     await queryClient.prefetchQuery({
-        queryKey: ["post", params.slug],
-        queryFn: () => getPostBySlug(params.slug),
+        queryKey: ["post", slug],
+        queryFn: () => getPostBySlug(slug),
     });
-
     return (
         <div className="max-w-6xl w-full px-3 xl:p-0 mx-auto my-20">
             <HydrationBoundary state={dehydrate(queryClient)}>
-                <Post slug={params.slug} />
+                <Post slug={slug} />
             </HydrationBoundary>
         </div>
     );

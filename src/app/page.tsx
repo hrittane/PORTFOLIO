@@ -3,13 +3,19 @@
 import { FaXTwitter } from "react-icons/fa6";
 import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 import Link from "next/link";
+
+interface MotionDivProps extends HTMLMotionProps<'div'> {
+  className?: string;
+}
 
 
 export default function Home() {
 
   const n = 5
+
+  const MotionDiv: React.FC<MotionDivProps> = (props) => <motion.div {...props} />;
 
   return (
 
@@ -22,7 +28,7 @@ export default function Home() {
       <div className="flex h-[75%] flex-col gap-4 justify-center w-[45%] md:w-[30%]" >
 
         {/* card 1 mobile and desktop */}
-        <motion.div
+        <MotionDiv
 
           initial={{
             opacity: 0,
@@ -57,10 +63,10 @@ export default function Home() {
 
           </div>
 
-        </motion.div>
+        </MotionDiv>
 
         {/* card2 */}
-        <motion.div
+        <MotionDiv
 
           initial={{
             opacity: 0,
@@ -149,7 +155,7 @@ export default function Home() {
           </div>
 
 
-        </motion.div>
+        </MotionDiv>
 
       </div>
 
@@ -160,7 +166,7 @@ export default function Home() {
         <div className="h-[80%] md:h-[60%] w-full rounded-[15px] flex flex-col md:flex-row gap-4">
 
           {/* card 3 */}
-          <motion.div
+          <MotionDiv
 
             initial={{
               opacity: 0,
@@ -206,10 +212,10 @@ export default function Home() {
             </section>
 
 
-          </motion.div>
+          </MotionDiv>
 
           {/* card 4 */}
-          <motion.div
+          <MotionDiv
 
             initial={{
               opacity: 0,
@@ -276,12 +282,12 @@ export default function Home() {
 
             </div>
 
-          </motion.div>
+          </MotionDiv>
 
         </div>
 
         {/* lower row */}
-        <motion.div
+        <MotionDiv
 
           initial={{
             opacity: 0,
@@ -353,7 +359,7 @@ export default function Home() {
             <Link href="/cv.pdf" target="_blank" download className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full" > Download Cv &nbsp; <i className='bx bxs-download' ></i> </Link>
           </div>
 
-        </motion.div>
+        </MotionDiv>
 
       </div>
 
