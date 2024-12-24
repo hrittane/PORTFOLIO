@@ -38,7 +38,7 @@ export default function Home() {
           animate={{ opacity: 1, translateX: 0, translateY: 0 }}
           transition={{ duration: 0.3, delay: 0.2 }}
 
-          className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-center bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.webp")` }}>
+          className="h-[40%] md:h-[75%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 bg-cover bg-right bg-no-repeat border border-[#EDEDED] dark:border-0" style={{ backgroundImage: `url("me.webp")` }}>
 
           <div className="relative w-full h-full "   >
 
