@@ -271,7 +271,7 @@ export default function Home() {
                 </div>
 
                 {/* button */}
-                <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3" > Let's talk &nbsp; <i className='bx bxs-chat'></i> </Link>
+                <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3" > Let&apos;s talk &nbsp; <i className='bx bxs-chat'></i> </Link>
 
               </div>
 
