@@ -219,7 +219,7 @@ export default function Home() {
 
               <h1 className=" font-semibold text-[#626161] text-base " >Soufiane Hrittane</h1>
               <hr className="w-full h-[1px] mx-auto  bg-gray-400 border-0 rounded  dark:bg-gray-700" />
-              <p className="text-[#868686] text-[10px] font-medium " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
+              <p className="text-[#868686] text-[10px] font-medium " > <span className="font-bold text-[11px] " >I&apos;m creative Full Stack web and mobile Developer</span> , and I&apos;m very passionate and dedicated to my work.</p>
 
               <Link href="/contact" className="bg-[#EDEDED] dark:bg-[#151617] text-black dark:text-white text-xs sm:text-sm font-bold py-3 rounded-xl flex justify-center items-center w-full "> Say Hello &nbsp; <i className='bx bxs-send' ></i>  </Link>
 
