@@ -37,7 +37,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' media="all" />
       </head>
 
-      <body className={`${poppins.variable} text-[#333333] bg-[#F5F5F7] dark:text-white dark:bg-[#080708]`}>
+      <body className={`${poppins.className} text-[#333333] bg-[#F5F5F7] dark:text-white dark:bg-[#080708]`}>
         <Providers>
           <NavbarLg />
           {children}

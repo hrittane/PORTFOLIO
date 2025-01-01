@@ -5,6 +5,12 @@ import { FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdWavingHand } from "react-icons/md";
 import { motion, HTMLMotionProps } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+
+import lightBg from '../../public/blog-light.webp'
+import darkBg from '../../public/blog-dark.webp'
+
+
 
 interface MotionDivProps extends HTMLMotionProps<'div'> {
   className?: string;
@@ -13,7 +19,7 @@ interface MotionDivProps extends HTMLMotionProps<'div'> {
 
 export default function Home() {
 
-  const n = 5
+
 
   const MotionDiv: React.FC<MotionDivProps> = (props) => <motion.div {...props} />;
 
@@ -45,18 +51,18 @@ export default function Home() {
 
             <div className="absolute top-0 text-left md:text-center w-full " >
 
-              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Soufiane Hrittane</h1>
-              <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686] " > welcome to my portfolio </p>
+              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl text-white " >This is me</h1>
+              <p className="text-xs sm:text-sm md:text-base lg:base text-[#b0b0b0] " > nice to meet you </p>
 
             </div>
 
 
-            <div className="absolute bottom-0 md:top-1/2 md:-trangray-y-1/2 left-0 flex flex-col items-center">
+            <div className="absolute bottom-0 md:top-1/3 left-0 flex flex-col items-center">
 
-              <Link href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-2xl " /></Link>
-              <Link href="https://wa.me/+212608223488/?text=hello !" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-2xl " /> </Link>
-              <Link href="https://github.com/hrittane" target="blank" > <FaGithub className="my-2 font-xs md:text-2xl " /></Link>
-              <Link href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank" ><FaLinkedinIn className="my-2 font-xs md:text-2xl " /></Link>
+              <Link href="https://twitter.com/soufianehrittan" target="blank" ><FaXTwitter className="my-2 font-xs md:text-3xl text-white " /></Link>
+              <Link href="https://wa.me/+212608223488/?text=hello !" target="blank" > <FaWhatsapp className="my-2 font-xs md:text-3xl text-white " /> </Link>
+              <Link href="https://github.com/hrittane" target="blank" > <FaGithub className="my-2 font-xs md:text-3xl text-white " /></Link>
+              <Link href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank" ><FaLinkedinIn className="my-2 font-xs md:text-3xl text-white " /></Link>
 
             </div>
 
@@ -84,7 +90,7 @@ export default function Home() {
             <div className="h-full flex flex-col items-center justify-center " >
 
               <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h1>
-              <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686] " > here you can </p>
+              <p className="text-xs sm:text-sm md:text-base lg:base py-1 text-[#868686] " > here you can </p>
 
               <Link href="/cv.pdf" target="_blank" download className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3 px-4 rounded-xl flex justify-center items-center w-[174px] mt-2 mx-auto "> Download Cv &nbsp; <i className='bx bxs-download' ></i> </Link>
 
@@ -175,30 +181,39 @@ export default function Home() {
             }}
             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-
-
-            className="h-[60%] w-[100%] md:h-full md:w-[60%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:p-5 border border-[#EDEDED] dark:border-0">
+            className="h-[60%] w-[100%] md:h-full md:w-[60%] bg-white dark:bg-[#1C1D1F] rounded-[15px] border border-[#EDEDED] dark:border-0">
 
 
             {/* on desktop */}
-            <section className="hidden md:flex md:flex-col md:h-full md:justify-between " >
-
-              <h1 className="font-semibold  md:text-3xl lg:text-5xl md:leading-loose lg:leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
-
-              <div className="flex items-center">
-                <hr className="flex-1 h-[1px] mx-auto bg-gray-400 border-0 rounded dark:bg-gray-700" />
-                <h1 className=" font-semibold text-[#626161] text-[24px] " >&nbsp;&nbsp;Soufiane Hrittane</h1>
+            <section className="hidden md:flex md:flex-col md:h-full md:justify-between" >
+              {/* navbar */}
+              <div className="bg-[#EDEDED] dark:bg-[#333333] h-[10%] flex flex-row items-center p-3 rounded-t-[15px]  ">
+                <div className=" w-[20px] h-[20px] bg-[#272727] m-1 rounded-full"></div>
+                <div className=" w-[20px] h-[20px] bg-[#272727] m-1 rounded-full"></div>
+                <div className=" w-[20px] h-[20px] bg-[#272727] m-1 rounded-full"></div>
               </div>
 
-              <p className="text-[#868686] text-sm  " >I&apos;m creative Full Stack Developer based in Elhajeb Morocco, and I&apos;m very passionate and dedicated to my work.</p>
+              {/* content */}
+              <div className="flex-1 m-8 flex flex-col justify-around" >
 
-              <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3"  > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </Link>
+                <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl lg:leading-snug leading-tight " >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
+
+                <div className="flex items-center">
+                  <hr className="flex-1 h-[1px] mx-auto bg-gray-400 border-0 rounded dark:bg-gray-700" />
+                  <h1 className=" font-semibold text-[#626161] text-base md:text-2xl lg:text-3xl  " >&nbsp;&nbsp;Soufiane Hrittane</h1>
+                </div>
+
+                <p className="text-[#868686] text-base md:text-lg lg:text-xl  " >I&apos;m a creative Full Stack Developer.</p>
+
+                <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3" > Say Hello &nbsp; <i className='bx bxs-send' ></i>  </Link>
+
+              </div>
 
             </section>
 
 
             {/* on mobile */}
-            <section className=" md:hidden text-left h-full flex flex-col justify-between " >
+            <section className=" md:hidden p-3 text-left h-full flex flex-col justify-between " >
 
               <h1 className="font-semibold text-xl leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
 
@@ -224,37 +239,42 @@ export default function Home() {
             }}
             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
+            className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] p-3 rounded-[15px] md:border-8 border-[#EDEDED] dark:border-[#333333] " >
 
-
-            className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] rounded-[15px] p-3 md:px-10 md:py-5 border border-[#EDEDED] dark:border-0" >
 
             {/* on desktop */}
             <div className="hidden md:flex md:flex-col md:h-full md:justify-between items-center" >
 
+              {/* notch */}
+              <div className="absolute top-0 h-[30px] w-[50%] bg-[#EDEDED] dark:bg-[#333333] rounded-b-lg " />
 
-              {/* intro */}
-              <div className="text-center" >
-                <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Explore more</h1>
-                <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686] " > at my blog </p>
-              </div>
+              {/* content */}
+              <div className="flex-1 flex flex-col justify-around items-center" >
 
-              {/* skeleton */}
-              {[...Array(n)].map((e, i) =>
+                {/* skeleton */}
+                <Image src="/mobile-dark.webp"
+                  alt="Logo"
+                  width={120}
+                  height={40}
+                  className="transition-opacity duration-300 dark:hidden mt-0 md:mt-12 " />
 
-                <div key={i} className="flex flex-row w-full items-center justify-start  " >
+                <Image src="/mobile-light.webp"
+                  alt="Logo"
+                  width={120}
+                  height={40}
+                  className="transition-opacity duration-300 hidden dark:block mt-0 md:mt-12 " />
 
-                  <div className="bg-[#EFEFEF] dark:bg-[#2D2D2D] h-[30px] w-[20%] rounded mr-2" ></div>
-
-                  <div className="flex flex-col w-full" >
-                    <hr className="w-full h-[10px] mx-auto bg-[#EFEFEF] dark:bg-[#2D2D2D] border-0 rounded my-1" />
-                    <hr className="w-[70%] h-[10px]  bg-[#EFEFEF] dark:bg-[#2D2D2D] border-0 rounded my-1" />
-                  </div>
-
+                {/* intro */}
+                <div className="text-center" >
+                  <p className="text-xs sm:text-sm md:text-xl lg:base text-[#868686] " > Guess what </p>
+                  <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-xl" >i build mobile <br /> apps too</h1>
                 </div>
 
-              )}
-              {/* button */}
-              <Link href="/blog" className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3  rounded-xl flex justify-center items-center w-[174px]" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </Link>
+                {/* button */}
+                <Link href="/contact" className=" text-black dark:text-white  bg-[#EDEDED] dark:bg-[#151617] dark:border-0  font-semibold py-3  rounded-xl flex justify-center items-center w-[174px] mt-3" > Let's talk &nbsp; <i className='bx bxs-chat'></i> </Link>
+
+              </div>
+
 
             </div>
 
@@ -303,53 +323,54 @@ export default function Home() {
           {/* on desktop */}
           <div className="hidden  md:flex flex-col w-full h-full p-3 md:p-5 " >
 
+            <div className="m-full flex flex-row gap-4 w-100 h-full  " >
 
-            <section className="hidden md:block " >
+              {/* elements */}
+              <div className="flex-1 h-full grid grid-cols-2 gap-4 " >
 
-              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >About Me</h1>
-              <p className="text-[10px] sm:text-sm md:text-sm lg:text-sm text-[#868686] mt-2  " > im a Full Stack Developer, I create web pages and mobile applications with great UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
+                <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
+                  <i className='bx bx-award text-2xl' ></i>
+                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Experience</h1>
+                  <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >10 Years Working</p>
+                </div>
 
-            </section>
+                <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center   ">
+                  <i className='bx bx-briefcase-alt-2 text-2xl' ></i>
+                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Completed</h1>
+                  <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 + Projects</p>
+                </div>
 
 
-            <div className="hidden mt-2 md:flex flex-row flex-wrap gap-4 h-full " >
+                <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
+                  <i className='bx bx-support text-2xl' ></i>
+                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Support</h1>
+                  <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >Online 24/7</p>
+                </div>
 
+                <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
+                  <i className='bx bx-like text-2xl' ></i>
+                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Satisfaction</h1>
+                  <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 % guaranteed </p>
+                </div>
 
-              <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center py-2 my-3 ">
-                <i className='bx bx-badge-check text-2xl' ></i>
-                <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Experience</h1>
-                <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >10 Years Working</p>
               </div>
 
-              <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center py-2 my-3 ">
-                <i className='bx bx-briefcase-alt-2 text-2xl' ></i>
-                <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Completed</h1>
-                <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 + Projects</p>
+              {/* blog */}
+              <div className="flex-1 h-full rounded-[15px] flex items-center justify-center bg-cover bg-center bg-light-pattern dark:bg-dark-pattern">
+
+                {/* button */}
+                <Link href="/blog" className=" text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3  rounded-xl flex justify-center items-center w-[174px]" > Visit My Blog &nbsp; <i className='bx bx-spreadsheet' ></i> </Link>
+
+
               </div>
-
-
-              <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center  py-2 my-3">
-                <i className='bx bx-support text-2xl' ></i>
-                <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Support</h1>
-                <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >Online 24/7</p>
-              </div>
-
-              <div className="border-[#EDEDED] dark:border-black dark:bg-[#151617] border w-1/4 flex-1 rounded-[15px] flex flex-col items-center justify-center  py-2 my-3">
-                <i className='bx bx-like text-2xl' ></i>
-                <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Satisfaction</h1>
-                <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 % guaranteed </p>
-              </div>
-
-
 
 
             </div>
 
-
           </div>
 
           {/* on mobile */}
-          <div className="md:hidden flex flex-col h-full justify-around" >
+          <div className="md:hidden flex flex-col h-full justify-around " >
 
             <div className="text-left ml-1" >
               <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h1>

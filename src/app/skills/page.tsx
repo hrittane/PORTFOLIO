@@ -3,6 +3,9 @@
 import { useState } from 'react'
 import { motion, HTMLMotionProps } from "framer-motion";
 
+import { SiNextdotjs } from "react-icons/si";
+
+
 interface MotionDivProps extends HTMLMotionProps<'div'> {
     className?: string;
 }
@@ -46,15 +49,15 @@ function Skills() {
                         <div className="text-center w-full mt-5 " >
 
                             <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Qualification</h1>
-                            <p className="text-xs sm:text-sm md:text-sm text-[#868686]" >My personel journey</p>
+                            <p className="text-xs sm:text-sm md:text-sm text-[#868686] mt-2" >My personel journey</p>
 
                         </div>
 
                         {/* selection */}
-                        <div className="w-full flex flex-row justify-around my-5  md:mt-10   " >
+                        <div className="w-full flex flex-row justify-around items-center my-5  md:mt-10   " >
 
-                            <span onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Education ? '' : 'text-[#888888]'}`} ><i className='bx bxs-graduation'></i>&nbsp;Education</p> </span>
-                            |
+                            <span onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Education ? '' : 'text-[#888888]'}`} ><i className='bx bxs-graduation'></i>&nbsp;Education&nbsp;&nbsp;</p> </span>
+                            {Education ? <i onClick={() => switchcontext()} className='  bx bxs-toggle-left text-sm md:text-3xl ' ></i> : <i onClick={() => switchcontext()} className='  bx bxs-toggle-right text-sm md:text-3xl ' ></i>}
                             <span onClick={() => switchcontext()} > <p className={`text-[10px] md:text-lg font-bold cursor-pointer ${Experience ? '' : 'text-[#888888]'}`} ><i className='bx bx-briefcase-alt-2' ></i>&nbsp;Experience</p> </span>
 
                         </div>
@@ -395,7 +398,7 @@ function Skills() {
                         {/* title */}
                         <div className="text-center w-full mt-5" >
 
-                            <p className="text-xs sm:text-sm md:text-sm lg:text-base text-[#868686] " >Frontend Skills</p>
+                            <p className="text-xs sm:text-sm md:text-sm lg:text-xl text-[#868686] " >Frontend Skills</p>
 
                         </div>
 
@@ -407,7 +410,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-html5 text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >HTML</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -418,7 +421,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-css3 text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >CSS</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -429,7 +432,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-javascript text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >JavaScript</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -444,7 +447,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx  bxl-tailwind-css text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Tailwind</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -455,7 +458,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-figma text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Figma</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -466,7 +469,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-react text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >React</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -503,7 +506,7 @@ function Skills() {
                         {/* title */}
                         <div className="text-center w-full mt-5" >
 
-                            <p className="text-xs sm:text-sm md:text-sm lg:text-sm text-[#868686] " >Backend Developer</p>
+                            <p className="text-xs sm:text-sm md:text-sm lg:text-xl text-[#868686] " >Backend Developer</p>
 
                         </div>
 
@@ -515,7 +518,9 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        {/* <i className='bx bx-badge-check text-2xl md:text-3xl '></i>&nbsp; */}
+                                        <SiNextdotjs className=' text-lg md:text-xl m-1 ' /> &nbsp;
+
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Next Js</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -526,7 +531,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-nodejs text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Node Js</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -537,7 +542,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-git text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Git</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Intermediate</p>
@@ -552,7 +557,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-mongodb text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >MongoDB</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
@@ -563,7 +568,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-firebase text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Firebase</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Intermediate</p>
@@ -574,7 +579,7 @@ function Skills() {
 
                                 <div className="flex flex-col" >
                                     <div className="flex flex-row">
-                                        <i className='bx bx-badge-check text-sm md:text-xl '></i>&nbsp;
+                                        <i className='bx bxl-docker text-2xl md:text-3xl '></i>&nbsp;
                                         <div className="text-left" >
                                             <h1 className="font-semibold text-[10px] md:text-sm" >Docker</h1>
                                             <p className="text-[8px] md:text-xs  text-[#868686]" >Advanced</p>
