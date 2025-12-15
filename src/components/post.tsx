@@ -3,6 +3,7 @@
 import { getPostBySlug } from "@/lib/requests";
 import { useQuery } from "@tanstack/react-query";
 import { notFound } from "next/navigation";
+import Image from 'next/image';
 
 type Props = {
     slug: string;
@@ -18,7 +19,7 @@ export default function Post({ slug }: Props) {
 
     return (
         <div className=""  >
-            <img src={data?.coverImage.url} alt="" className="w-full" />
+            <Image src={data?.coverImage.url} alt="" className="w-full" />
             <h1 className="text-4xl lg:text-6xl text-center leading-relaxed font-bold mt-5">
                 {data?.title}
             </h1>
@@ -27,7 +28,7 @@ export default function Post({ slug }: Props) {
                 by:&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.moroccan.dev/" className=" flex flex-row items-center " >
                     {data?.author.profilePicture && (
-                        <img
+                        <Image
                             src={data?.author.profilePicture}
                             alt={data?.author.name}
                             className="rounded-full h-10 w-10 mr-5"

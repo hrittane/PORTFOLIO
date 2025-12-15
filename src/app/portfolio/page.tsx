@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { motion, MotionProps } from "framer-motion";
-
+import Image from 'next/image';
 
 interface MotionAnchorProps extends MotionProps {
     href?: string;
@@ -355,7 +355,7 @@ function Portfolio() {
 
                             <div className=" w-[300px] h-1/2 ">
 
-                                <img src="apps/first.gif" className='w-full' alt="" />
+                                <Image src="apps/first.gif" className='w-full' alt="" />
 
                             </div>
 
