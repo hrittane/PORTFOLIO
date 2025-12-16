@@ -14,7 +14,7 @@ export default function BlogCard({ post }: Props) {
         <>
             <Card className="flex flex-col">
                 <CardHeader>
-                    <Image
+                    <img
                         className="rounded-lg h-full"
                         src={post.coverImage.url}
                         alt={post.title}
@@ -28,7 +28,8 @@ export default function BlogCard({ post }: Props) {
                     </h2>
                     <div className="mt-3 flex gap-3 items-center">
                         {post?.author.profilePicture && (
-                            <Image
+                            <img
+                                width={100}
                                 src={post.author.profilePicture}
                                 className="h-7 w-7 rounded-full"
                                 alt=""
