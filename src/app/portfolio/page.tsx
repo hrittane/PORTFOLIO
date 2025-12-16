@@ -100,7 +100,7 @@ function Portfolio() {
                             href='https://rest-car.netlify.app/' target='blank' className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-center no-repeat" style={{ backgroundImage: `url("apps/restcar.webp")` }}>
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
-                                <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm md:text-xl lg:text-2xl" >Rest-Car.fr</h1>
+                                <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-2xl" >Rest-Car.fr</h1>
                                 <span className="text-[#808080] text-[10px] md:text-sm " >View More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                             </div>
 
@@ -208,7 +208,7 @@ function Portfolio() {
                             className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-no-repeat cursor-pointer" style={{ backgroundImage: `url("apps/delinMobile.webp")`, backgroundPosition: 'calc(100% + 87px) bottom' }} onClick={() => { setOpenModalDelin(!openModalDelin) }}>
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
-                                <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm md:text-xl lg:text-1xl" >Delan <br></br>App</h1>
+                                <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-1xl" >Delan <br></br>App</h1>
                                 <span className="text-[#808080] text-[10px] md:text-sm " >View <br></br> More&nbsp;<i className='bx bx-right-arrow-alt' ></i></span>
                             </div>
 
