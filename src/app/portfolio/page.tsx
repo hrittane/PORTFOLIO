@@ -205,7 +205,7 @@ function Portfolio() {
                             transition={{ duration: 0.3, delay: 0.2 }}
 
 
-                            className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-no-repeat cursor-pointer" style={{ backgroundImage: `url("apps/delinMobile.webp")`, backgroundPosition: 'calc(100% + 87px) bottom' }} onClick={() => { setOpenModalDelin(!openModalDelin) }}>
+                            className="relative w-[40%]  bg-white rounded-[15px] dark:bg-[#1C1D1F] bg-cover bg-no-repeat cursor-pointer" style={{ backgroundImage: `url("apps/delinMobile.webp")` }} onClick={() => { setOpenModalDelin(!openModalDelin) }}>
 
                             <div className=" absolute top-0 m-3 sm:m-5 md:m-6 ">
                                 <h1 className=" font-semibold  text-[#333333] text-sm md:text-xl lg:text-1xl" >Delan <br></br>App</h1>
