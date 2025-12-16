@@ -239,7 +239,7 @@ export default function Home() {
             }}
             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
-            className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] p-3 rounded-[15px] md:border-8 border-[#EDEDED] dark:border-[#333333] " >
+            className="h-[40%] w-[100%] md:h-full md:w-[40%] bg-white dark:bg-[#1C1D1F] p-3 rounded-[15px] md:border-8 border-[#EDEDED] dark:border-[#333333] relative " >
 
 
             {/* on desktop */}
