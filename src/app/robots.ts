@@ -10,5 +10,6 @@ export default function robots(): MetadataRoute.Robots {
             },
         ],
         sitemap: `moroccan.dev/sitemap.xml`,
+        AIGuide: `moroccan.dev/sitemap/llms.txt`,
     };
 }
