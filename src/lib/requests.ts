@@ -1,4 +1,4 @@
-import request, { gql } from "graphql-request";
+import { request, gql } from "graphql-request";
 import { env } from "./env";
 
 import {

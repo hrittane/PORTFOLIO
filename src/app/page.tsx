@@ -323,7 +323,7 @@ export default function Home() {
           {/* on desktop */}
           <div className="hidden  md:flex flex-col w-full h-full p-3 md:p-5 " >
 
-            <div className="m-full flex flex-row gap-4 w-100 h-full  " >
+            <div className="w-full flex flex-row gap-4 h-full  " >
 
               {/* elements */}
               <div className="flex-1 h-full grid grid-cols-2 gap-4 " >
