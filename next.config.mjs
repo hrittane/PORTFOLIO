@@ -6,6 +6,14 @@ const nextConfig = {
         // Required for Sentry with Next.js 15
         clientTraceMetadata: ['baggage', 'sentry-trace'],
     },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'cdn.hashnode.com',
+            },
+        ],
+    },
 };
 
 export default withSentryConfig(

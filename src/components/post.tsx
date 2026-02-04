@@ -19,7 +19,14 @@ export default function Post({ slug }: Props) {
 
     return (
         <div className=""  >
-            <Image src={data?.coverImage.url} alt="" className="w-full" />
+            <div className="relative w-full h-[400px] lg:h-[600px]">
+                <Image
+                    src={data?.coverImage.url}
+                    alt={data?.title || "Blog post cover image"}
+                    fill
+                    className="object-cover"
+                />
+            </div>
             <h1 className="text-4xl lg:text-6xl text-center leading-relaxed font-bold mt-5">
                 {data?.title}
             </h1>
@@ -31,6 +38,8 @@ export default function Post({ slug }: Props) {
                         <Image
                             src={data?.author.profilePicture}
                             alt={data?.author.name}
+                            width={40}
+                            height={40}
                             className="rounded-full h-10 w-10 mr-5"
                         />
                     )}
