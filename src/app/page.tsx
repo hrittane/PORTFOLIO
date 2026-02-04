@@ -51,7 +51,7 @@ export default function Home() {
 
             <div className="absolute top-0 text-left md:text-center w-full " >
 
-              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl text-white " >This is me</h1>
+              <h2 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl text-white " >This is me</h2>
               <p className="text-xs sm:text-sm md:text-base lg:base text-[#b0b0b0] " > nice to meet you </p>
 
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className="h-full flex flex-col items-center justify-center " >
 
-              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h1>
+              <h2 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h2>
               <p className="text-xs sm:text-sm md:text-base lg:base py-1 text-[#868686] " > here you can </p>
 
               <Link href="/cv.pdf" target="_blank" download className="text-black dark:text-white bg-[#EDEDED] dark:bg-[#151617] dark:border-0 font-semibold py-3 px-4 rounded-xl flex justify-center items-center w-[174px] mt-2 mx-auto "> Download Cv &nbsp; <i className='bx bxs-download' ></i> </Link>
@@ -108,7 +108,7 @@ export default function Home() {
               {/* <SlBadge className="" size={30} /> */}
               <i className='bx bx-badge-check' ></i>
               <div className="text-center" >
-                <h1 className="mr-2 text-sm font-bold" >Experience</h1>
+                <h3 className="mr-2 text-sm font-bold" >Experience</h3>
                 <p className="mr-2 text-[10px] mt-1" >100 + Projects</p>
               </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
               {/* <TfiBag className="" size={30} /> */}
               <i className='bx bx-briefcase-alt-2' ></i>
               <div className="text-center" >
-                <h1 className="mr-2 text-sm font-bold" >Completed</h1>
+                <h3 className="mr-2 text-sm font-bold" >Completed</h3>
                 <p className="mr-2 text-[10px] mt-1" >10 Years Working</p>
               </div>
 
@@ -137,7 +137,7 @@ export default function Home() {
               {/* <FaRegSmileBeam className="" size={30} /> */}
               <i className='bx bx-like' ></i>
               <div className="text-center" >
-                <h1 className="mr-2 text-sm font-bold " >Satisfaction</h1>
+                <h3 className="mr-2 text-sm font-bold " >Satisfaction</h3>
                 <p className="mr-2 text-[10px] mt-1" >100 % satisfaction</p>
               </div>
 
@@ -152,7 +152,7 @@ export default function Home() {
               {/* <BsHeadset className="" size={30} /> */}
               <i className='bx bx-support' ></i>
               <div className="text-center" >
-                <h1 className="mr-2 text-sm font-bold " >Support</h1>
+                <h3 className="mr-2 text-sm font-bold " >Support</h3>
                 <p className="mr-2 text-[10px] mt-1" >Online 24/7</p>
               </div>
 
@@ -196,12 +196,12 @@ export default function Home() {
               {/* content */}
               <div className="flex-1 m-8 flex flex-col justify-around" >
 
-                <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl lg:leading-snug leading-tight " >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
-
-                <div className="flex items-center">
-                  <hr className="flex-1 h-[1px] mx-auto bg-gray-400 border-0 rounded dark:bg-gray-700" />
-                  <h1 className=" font-semibold text-[#626161] text-base md:text-2xl lg:text-3xl  " >&nbsp;&nbsp;Soufiane Hrittane</h1>
-                </div>
+                <h1 className="font-bold text-2xl md:text-4xl lg:text-6xl lg:leading-snug leading-tight " >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is
+                  <div className="flex items-center mt-4">
+                    <hr className="flex-1 h-[1px] mx-auto bg-gray-400 border-0 rounded dark:bg-gray-700" />
+                    <span className=" font-semibold text-[#626161] text-base md:text-2xl lg:text-3xl  " >&nbsp;&nbsp;Soufiane Hrittane</span>
+                  </div>
+                </h1>
 
                 <p className="text-[#868686] text-base md:text-lg lg:text-xl  " >I&apos;m a creative Full Stack Developer.</p>
 
@@ -215,9 +215,9 @@ export default function Home() {
             {/* on mobile */}
             <section className=" md:hidden p-3 text-left h-full flex flex-col justify-between " >
 
-              <h1 className="font-semibold text-xl leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is </h1>
-
-              <h1 className=" font-semibold text-[#626161] text-base " >Soufiane Hrittane</h1>
+              <div className="font-semibold text-xl leading-relaxed" >Hello <MdWavingHand style={{ display: "inline-flex" }} /> <br></br>my name is
+                <div className="font-semibold text-[#626161] text-base mt-2" >Soufiane Hrittane</div>
+              </div>
               <hr className="w-full h-[1px] mx-auto  bg-gray-400 border-0 rounded  dark:bg-gray-700" />
               <p className="text-[#868686] text-[10px] font-medium " > <span className="font-bold text-[11px] " >I&apos;m creative Full Stack web and mobile Developer</span> , and I&apos;m very passionate and dedicated to my work.</p>
 
@@ -253,13 +253,13 @@ export default function Home() {
 
                 {/* skeleton */}
                 <Image src="/mobile-dark.webp"
-                  alt="Logo"
+                  alt="Mobile app development showcase"
                   width={120}
                   height={40}
                   className="transition-opacity duration-300 dark:hidden mt-0 md:mt-12 " />
 
                 <Image src="/mobile-light.webp"
-                  alt="Logo"
+                  alt="Mobile app development showcase"
                   width={120}
                   height={40}
                   className="transition-opacity duration-300 hidden dark:block mt-0 md:mt-12 " />
@@ -267,7 +267,7 @@ export default function Home() {
                 {/* intro */}
                 <div className="text-center" >
                   <p className="text-xs sm:text-sm md:text-xl lg:base text-[#868686] " > Guess what </p>
-                  <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-xl" >i build mobile <br /> apps too</h1>
+                  <h2 className="font-bold text-xs sm:text-base md:text-base lg:text-xl" >i build mobile <br /> apps too</h2>
                 </div>
 
                 {/* button */}
@@ -283,7 +283,7 @@ export default function Home() {
 
 
               <div className="text-left ml-1" >
-                <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Explore more</h1>
+                <h2 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Explore more</h2>
                 <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686]" >at my blog </p>
               </div>
 
@@ -330,26 +330,26 @@ export default function Home() {
 
                 <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
                   <i className='bx bx-award text-2xl' ></i>
-                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Experience</h1>
+                  <h3 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Experience</h3>
                   <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >10 Years Working</p>
                 </div>
 
                 <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center   ">
                   <i className='bx bx-briefcase-alt-2 text-2xl' ></i>
-                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Completed</h1>
+                  <h3 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Completed</h3>
                   <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 + Projects</p>
                 </div>
 
 
                 <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
                   <i className='bx bx-support text-2xl' ></i>
-                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Support</h1>
+                  <h3 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Support</h3>
                   <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >Online 24/7</p>
                 </div>
 
                 <div className="border-[#EDEDED] dark:border-black bg-[#EFEFEF] dark:bg-[#151617] border w-full h-full  rounded-[15px] flex flex-col items-center justify-center  ">
                   <i className='bx bx-like text-2xl' ></i>
-                  <h1 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Satisfaction</h1>
+                  <h3 className=" text-xs sm:text-xs md:text-[8px] lg:text-sm  font-bold mt-1" >Satisfaction</h3>
                   <p className=" text-xs sm:text-xs md:text-[8px] lg:text-sm mt-1" >100 % guaranteed </p>
                 </div>
 
@@ -373,7 +373,7 @@ export default function Home() {
           <div className="md:hidden flex flex-col h-full justify-around " >
 
             <div className="text-left ml-1" >
-              <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h1>
+              <h2 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >For Professionals</h2>
               <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686]" >here you can </p>
             </div>
 

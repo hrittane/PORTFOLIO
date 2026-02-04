@@ -102,6 +102,7 @@ export async function getPostBySlug(slug: string) {
         post(slug: $slug) {
           title
           subtitle
+          brief
           seo{
             title
             description

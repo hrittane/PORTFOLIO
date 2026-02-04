@@ -9,22 +9,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     return [
         {
-            url: `moroccan.dev/`,
+            url: `https://www.moroccan.dev/`,
         },
         {
-            url: `moroccan.dev/skills`,
+            url: `https://www.moroccan.dev/skills`,
         },
         {
-            url: `moroccan.dev/services`,
+            url: `https://www.moroccan.dev/services`,
         },
         {
-            url: `moroccan.dev/portfolio`,
+            url: `https://www.moroccan.dev/portfolio`,
         },
         {
-            url: `moroccan.dev/contact`,
+            url: `https://www.moroccan.dev/contact`,
         },
         {
-            url: `moroccan.dev/blog`,
+            url: `https://www.moroccan.dev/blog`,
         }
 
     ];

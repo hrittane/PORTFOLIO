@@ -355,7 +355,7 @@ function Portfolio() {
 
                             <div className=" w-[300px] h-1/2 ">
 
-                                <Image src="apps/first.gif" className='w-full' alt="" />
+                                <Image src="apps/first.gif" className='w-full' alt="Meditation app demo animation" width={300} height={500} />
 
                             </div>
 

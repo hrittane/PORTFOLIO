@@ -63,7 +63,7 @@ function Contact() {
 
                     <a href='mailto:info@moroccan.dev' >
                         <i className='bx bx-mail-send text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
-                        <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Email</h1>
+                        <h2 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Email</h2>
                         <div className='hidden md:block' >
                             <p className="text-[#808080] text-sm mt-2" >info@moroccan.dev</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
@@ -87,7 +87,7 @@ function Contact() {
 
                     <a href="https://wa.me/+212608223488/?text=hello!">
                         <i className='bx bxl-whatsapp text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
-                        <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Whatsapp</h1>
+                        <h2 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">Whatsapp</h2>
                         <div className='hidden md:block' >
                             <p className="text-[#808080] text-sm mt-2" >+212608223488</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
@@ -111,7 +111,7 @@ function Contact() {
 
                     <a href="https://www.linkedin.com/in/soufiane-hrittane-7352a5136/" target="blank">
                         <i className='bx bxl-linkedin text-[#333333] dark:text-[#EFEFEF] text-4xl md:text-5xl'></i>
-                        <h1 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">linkedin</h1>
+                        <h2 className=" font-semibold  text-[#333333] dark:text-[#EFEFEF] text-sm  mt-2">linkedin</h2>
                         <div className='hidden md:block' >
                             <p className="text-[#808080] text-sm mt-2" >soufiane-hrittane</p>
                             <p className="text-[#808080] text-sm mt-2" >Write me&nbsp;<i className='bx bx-right-arrow-alt' ></i></p>
@@ -143,7 +143,7 @@ function Contact() {
 
                     <div className="text-left md:text-center w-full mb-5" >
 
-                        <h1 className="font-bold text-xs sm:text-base md:text-base lg:text-2xl" >Get in touch</h1>
+                        <h1 className="font-bold text-xl sm:text-base md:text-base lg:text-2xl" >Get in touch</h1>
                         <p className="text-xs sm:text-sm md:text-sm lg:base text-[#868686] " > Contact Me </p>
 
                     </div>

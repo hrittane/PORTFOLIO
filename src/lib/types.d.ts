@@ -58,6 +58,7 @@ export type GetPostBySlugResponse = {
         post: {
             title: string;
             subtitle?: string;
+            brief: string;
             seo: {
                 title: string;
                 description: string;

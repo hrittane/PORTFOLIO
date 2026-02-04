@@ -16,7 +16,7 @@ export async function generateMetadata() {
     return {
 
         title: data.displayTitle || data.title,
-        description: 'my name is soufiane im a full stack developper from morocco and this is my Blog',
+        description: 'Explore articles and tutorials on full stack development, React, Next.js, mobile development, and web design by Soufiane Hrittane.',
     };
 }
 
@@ -40,6 +40,7 @@ async function page() {
     return (
 
         <main className="max-w-6xl w-full px-3 xl:p-0 mx-auto my-20  ">
+            <h1 className="text-4xl font-bold mb-8 text-center">Soufiane's Blog</h1>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5 ">
                 <HydrationBoundary state={dehydrate(queryClient)}>
                     <Posts />

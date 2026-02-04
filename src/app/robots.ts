@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: [],
             },
         ],
-        sitemap: `moroccan.dev/sitemap.xml`,
+        sitemap: `https://www.moroccan.dev/sitemap.xml`,
     };
 }
