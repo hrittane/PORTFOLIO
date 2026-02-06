@@ -12,6 +12,27 @@ interface MotionAnchorProps extends MotionProps {
     onClick?: () => void;
 }
 
+export async function generateMetadata() {
+    return {
+        title: 'Portfolio | Soufiane Hrittane - Full Stack Developer',
+        description: 'Explore the portfolio of Soufiane Hrittane showcasing various projects in web development, mobile applications, UI/UX design, and full-stack solutions.',
+        alternates: {
+            canonical: 'https://www.moroccan.dev/portfolio',
+        },
+        openGraph: {
+            title: 'Portfolio | Soufiane Hrittane - Full Stack Developer',
+            description: 'Explore the portfolio of Soufiane Hrittane showcasing various projects in web development, mobile applications, UI/UX design, and full-stack solutions.',
+            url: 'https://www.moroccan.dev/portfolio',
+            type: 'website',
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: 'Portfolio | Soufiane Hrittane - Full Stack Developer',
+            description: 'Explore the portfolio of Soufiane Hrittane showcasing various projects in web development, mobile applications, UI/UX design, and full-stack solutions.',
+        },
+    };
+}
+
 function Portfolio() {
 
 
@@ -312,12 +333,6 @@ function Portfolio() {
 
                                 <video width="" height="" controls preload="none">
                                     <source src="/apps/demo.MP4" type="video/mp4" />
-                                    <track
-                                        src="/apps/demo.MP4"
-                                        kind="subtitles"
-                                        srcLang="en"
-                                        label="English"
-                                    />
                                     Your browser does not support the video tag.
                                 </video>
 
@@ -392,12 +407,6 @@ function Portfolio() {
 
                                 <video width="" height="" controls preload="none">
                                     <source src="/apps/sflix.MP4" type="video/mp4" />
-                                    <track
-                                        src="/apps/sflix.MP4"
-                                        kind="subtitles"
-                                        srcLang="en"
-                                        label="English"
-                                    />
                                     Your browser does not support the video tag.
                                 </video>
 

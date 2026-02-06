@@ -253,13 +253,13 @@ export default function Home() {
 
                 {/* skeleton */}
                 <Image src="/mobile-dark.webp"
-                  alt="Mobile app development showcase"
+                  alt="Mobile app development interface - Dark theme"
                   width={120}
                   height={40}
                   className="transition-opacity duration-300 dark:hidden mt-0 md:mt-12 " />
 
                 <Image src="/mobile-light.webp"
-                  alt="Mobile app development showcase"
+                  alt="Mobile app development interface - Light theme"
                   width={120}
                   height={40}
                   className="transition-opacity duration-300 hidden dark:block mt-0 md:mt-12 " />

@@ -1,30 +1,42 @@
 
 
+
+
 import { MetadataRoute } from "next";
 
 
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-
+    const baseUrl = 'https://www.moroccan.dev';
+    const currentDate = new Date().toISOString();
 
     return [
         {
-            url: `https://www.moroccan.dev/`,
+            url: `${baseUrl}/`,
+            lastModified: currentDate,
         },
         {
-            url: `https://www.moroccan.dev/skills`,
+            url: `${baseUrl}/skills`,
+            lastModified: currentDate,
         },
         {
-            url: `https://www.moroccan.dev/services`,
+            url: `${baseUrl}/services`,
+            lastModified: currentDate,
         },
         {
-            url: `https://www.moroccan.dev/portfolio`,
+            url: `${baseUrl}/portfolio`,
+            lastModified: currentDate,
         },
         {
-            url: `https://www.moroccan.dev/contact`,
+            url: `${baseUrl}/contact`,
+            lastModified: currentDate,
         },
         {
-            url: `https://www.moroccan.dev/blog`,
+            url: `${baseUrl}/blog`,
+            lastModified: currentDate,
+        },
+        {
+            url: `${baseUrl}/thankyou`,
+            lastModified: currentDate,
         }
 
     ];

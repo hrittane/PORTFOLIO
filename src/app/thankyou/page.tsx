@@ -1,5 +1,26 @@
 import React from 'react'
 
+export async function generateMetadata() {
+    return {
+        title: 'Thank You | Soufiane Hrittane - Full Stack Developer',
+        description: 'Thank you for contacting Soufiane Hrittane. Your message has been received and I will respond as soon as possible.',
+        alternates: {
+            canonical: 'https://www.moroccan.dev/thankyou',
+        },
+        openGraph: {
+            title: 'Thank You | Soufiane Hrittane - Full Stack Developer',
+            description: 'Thank you for contacting Soufiane Hrittane. Your message has been received and I will respond as soon as possible.',
+            url: 'https://www.moroccan.dev/thankyou',
+            type: 'website',
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: 'Thank You | Soufiane Hrittane - Full Stack Developer',
+            description: 'Thank you for contacting Soufiane Hrittane. Your message has been received and I will respond as soon as possible.',
+        },
+    };
+}
+
 function page() {
     return (
         <div className="flex items-center justify-center h-screen p-10">

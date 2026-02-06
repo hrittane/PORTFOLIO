@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
             {
                 userAgent: "*",
                 allow: "/",
-                disallow: [],
+                disallow: ["/api/", "/_next/"],
             },
         ],
         sitemap: `https://www.moroccan.dev/sitemap.xml`,
