@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion, HTMLMotionProps } from "framer-motion";
 
 import { SiNextdotjs } from "react-icons/si";
@@ -14,6 +14,7 @@ function Skills() {
 
     const [Education, setEducation] = useState(false)
     const [Experience, setExperience] = useState(true)
+    const hasAnimated = useRef(false)
 
 
     function switchcontext() {
@@ -32,14 +33,15 @@ function Skills() {
 
                 {/* card 1 */}
                 <MotionDiv
-
-                    initial={{
+                    layout={false}
+                    initial={hasAnimated.current ? false : {
                         opacity: 0,
                         translateX: -50,
                         translateY: 0,
                     }}
                     animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
+                    onAnimationComplete={() => { hasAnimated.current = true }}
 
                     className="h-[100%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
@@ -381,14 +383,15 @@ function Skills() {
 
                 {/* third card */}
                 <MotionDiv
-
-                    initial={{
+                    layout={false}
+                    initial={hasAnimated.current ? false : {
                         opacity: 0,
                         translateX: 50,
                         translateY: -50,
                     }}
                     animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
+                    onAnimationComplete={() => { hasAnimated.current = true }}
 
                     className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
@@ -489,14 +492,15 @@ function Skills() {
 
                 {/* fourth card */}
                 <MotionDiv
-
-                    initial={{
+                    layout={false}
+                    initial={hasAnimated.current ? false : {
                         opacity: 0,
                         translateX: 50,
                         translateY: 50,
                     }}
                     animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                     transition={{ duration: 0.3, delay: 0.2 }}
+                    onAnimationComplete={() => { hasAnimated.current = true }}
 
                     className="h-[50%] w-full rounded-[15px] bg-white dark:bg-[#1C1D1F] p-3 md:p-5 border border-[#EDEDED] dark:border-0 " >
 
